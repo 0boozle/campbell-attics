@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#A6542B" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/assets/logo.png" as="image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Primary Meta Tags -->
+    <title>Campbell's Attics | Professional Attic Storage Solutions Perth</title>
+    <meta name="title" content="Campbell's Attics | Professional Attic Storage Solutions Perth">
+    <meta name="description" content="Transform your unused roof space into valuable storage with Perth's trusted attic specialists. Professional installations, 5-year warranty, and best price guarantee.">
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="max-age=604800" />
+    
+    <!-- Rest of existing meta tags... -->
+    
+    <!-- Inline critical CSS -->
+    <style>
+      /* Add critical CSS here */
+      body { margin: 0; }
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #A6542B;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Loading spinner -->
+      <div style="height:100vh;display:flex;align-items:center;justify-content:center">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
