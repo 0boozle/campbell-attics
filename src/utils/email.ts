@@ -21,7 +21,7 @@ export const sendEmail = async (data: EmailData, templateId: string) => {
       templateId,
       {
         to_email: import.meta.env.VITE_CONTACT_EMAIL || 'campbellcwa@outlook.com',
-    from_name: data.name,
+    name: data.name,
     from_email: data.email,
     phone: data.phone || "Not provided",
     email: data.email || "Not provided", // for Reply To field
