@@ -21,14 +21,16 @@ export const sendEmail = async (data: EmailData, templateId: string) => {
       templateId,
       {
         to_email: import.meta.env.VITE_CONTACT_EMAIL || 'campbellcwa@outlook.com',
-        from_name: data.name,
-        from_email: data.email,
-        phone: data.phone || "Not provided",
-        message: data.message,
-        job_type: data.jobType || "Not applicable",
-        budget: data.budget || "Not applicable",
-        urgency: data.urgency || "Not applicable",
-        location: data.location || "Not applicable"
+    from_name: data.name,
+    from_email: data.email,
+    phone: data.phone || "Not provided",
+    email: data.email || "Not provided", // for Reply To field
+    message: data.message || "No message provided",
+    jobType: data.jobType || "Not applicable",
+    budget: data.budget || "Not applicable",
+    urgency: data.urgency || "Not applicable",
+    location: data.location || "Not applicable",
+    additionalInfo: data.additionalInfo || "Not applicable",
       }
     );
     
