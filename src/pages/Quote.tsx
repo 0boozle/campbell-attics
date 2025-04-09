@@ -93,7 +93,7 @@ function Quote() {
     if (validateForm()) {
       setIsSubmitting(true);
       try {
-        await sendEmail(formData, "QUOTE_FORM_TEMPLATE_ID");
+        await sendEmail(formData, "template_iw1yedq");
         setIsSubmitted(true);
         setFormData({
           name: '',
