@@ -351,7 +351,7 @@ function Quote() {
                     className={`w-full px-4 py-2 rounded-lg border ${
                       errors.location ? 'border-red-500' : 'border-gray-700'
                     } focus:outline-none focus:ring-2 focus:ring-brand-copper bg-brand-dark text-white`}
-                    placeholder="Your address"
+                    placeholder="Your suburb"
                   />
                   {errors.location && (
                     <p className="text-red-500 text-sm mt-1">{errors.location}</p>
