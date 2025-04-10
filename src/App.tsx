@@ -46,7 +46,7 @@ function HomePage() {
       <section 
         className="relative min-h-screen bg-cover bg-center"
         style={{
-          backgroundImage: "url('/assets/hero section.png')"
+          backgroundImage: "url('/assets/hero section.webp')"
         }}
         aria-label="Hero section"
       >
