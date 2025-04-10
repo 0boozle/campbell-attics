@@ -6,6 +6,7 @@ import { sendEmail } from '../utils/email';
 
 interface QuoteFormData {
   name: string;
+  email: string;
   phone: string;
   jobType: string;
   budget: string;
@@ -16,6 +17,7 @@ interface QuoteFormData {
 
 interface FormErrors {
   name?: string;
+  email?: string;
   phone?: string;
   jobType?: string;
   budget?: string;
@@ -42,6 +44,7 @@ const URGENCY_OPTIONS = [
 function Quote() {
   const [formData, setFormData] = useState<QuoteFormData>({
     name: '',
+    email: '',
     phone: '',
     jobType: '',
     budget: '',
@@ -59,6 +62,10 @@ function Quote() {
 
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.name = 'Email is required';
     }
 
     if (!formData.phone.trim()) {
@@ -97,6 +104,7 @@ function Quote() {
         setIsSubmitted(true);
         setFormData({
           name: '',
+          email: '',
           phone: '',
           jobType: '',
           budget: '',
@@ -212,6 +220,26 @@ function Quote() {
                   />
                   {errors.name && (
                     <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-brand-copper font-semibold mb-2">
+                    Email *
+                  </label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={`w-full px-4 py-2 rounded-lg border ${
+                      errors.email ? 'border-red-500' : 'border-gray-700'
+                    } focus:outline-none focus:ring-2 focus:ring-brand-copper bg-brand-dark text-white`}
+                    placeholder="Email address"
+                  />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm mt-1">{errors.email}</p>
                   )}
                 </div>
 
