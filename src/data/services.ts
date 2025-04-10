@@ -6,7 +6,7 @@ export const services = [
     title: 'Dust-Proof Storage Rooms',
     icon: Hammer,
     description: 'Protect What Matters Most—Without Losing the Space You Need',
-    image: '/assets/Dustproof.png',
+    image: '/assets/dust proof.png',
     cta: {
       text: 'Claim Your Free Quote',
       link: '/dust-proof-storage'
