@@ -25,7 +25,7 @@ export const services = [
     title: 'Attic Platforms & Shelving',
     icon: Hammer,
     description: 'Store More, Stay Organised, and Reclaim Your Home',
-    image: '/assets/Storage Shelves.png',
+    image: '/assets/attic shelving.png',
     cta: {
       text: 'Find Your Storage Solution',
       link: '/attic-storage-perth'
