@@ -6,7 +6,7 @@ export const services = [
     title: 'Dust-Proof Storage Rooms',
     icon: Hammer,
     description: 'Protect What Matters Most—Without Losing the Space You Need',
-    image: '/assets/dust proof.png',
+    image: '/assets/dust proof.webp',
     cta: {
       text: 'Claim Your Free Quote',
       link: '/dust-proof-storage'
@@ -25,7 +25,7 @@ export const services = [
     title: 'Attic Platforms & Shelving',
     icon: Hammer,
     description: 'Store More, Stay Organised, and Reclaim Your Home',
-    image: '/assets/attic shelving.png',
+    image: '/assets/attic shelving.webp',
     cta: {
       text: 'Find Your Storage Solution',
       link: '/attic-storage-perth'
