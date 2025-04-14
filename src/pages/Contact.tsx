@@ -54,7 +54,7 @@ function Contact() {
     if (validateForm()) {
       setIsSubmitting(true);
       try {
-        await sendEmail(formData, "CONTACT_FORM_TEMPLATE_ID");
+        await sendEmail(formData, "template_qx3kn5p");
         setIsSubmitted(true);
         setFormData({
           name: '',
