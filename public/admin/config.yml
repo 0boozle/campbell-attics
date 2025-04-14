@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/assets"
+public_folder: "/assets"
+
+site_url: "https://www.campbellattics.com.au"
+
+collections:
+  # Services Page Text (from markdown)
+  - name: "services_page"
+    label: "Services Page Content"
+    files:
+      - name: "services"
+        label: "Services Page"
+        file: "src/content/pages/services.md"
+        fields:
+          - { name: "title", label: "Hero Title", widget: "string" }
+          - { name: "subtitle", label: "Hero Subtitle", widget: "string" }
+          - { name: "intro", label: "Intro Heading", widget: "string" }
+          - { name: "body", label: "Intro Paragraph", widget: "text" }
+
+  # Gallery Section
+  - name: "gallery"
+    label: "Gallery"
+    folder: "src/content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Section Title", widget: "string" }
+      - { name: "description", label: "Section Description", widget: "text" }
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "src", widget: "image" }
+          - { label: "Alt Text", name: "alt", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+
+  # Testimonials Section
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "src/content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "name", label: "Client Name", widget: "string" }
+      - { name: "quote", label: "Testimonial", widget: "text" }
