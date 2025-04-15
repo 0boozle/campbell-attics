@@ -5,7 +5,7 @@ backend:
 media_folder: "public/assets"
 public_folder: "/assets"
 
-site_url: "https://www.campbellattics.com.au"
+site_url: "https://www.campbellattics.com"
 
 collections:
   # Services Page Text (from markdown)
